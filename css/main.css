@@ -1,0 +1,175 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  text-align:center;
+  color:#FFFFFF;
+  float:inherit;
+  font-family: "Open Sans", sans-serif;
+  font-size: 600%;	
+  margin:0 0 0 0;
+}
+
+h2 {
+    margin: 0 0 0 0; 
+    min-width: 30px;	
+    width: 100vw;
+    height: 100vh;
+    margin : auto;
+	align-content:center;
+}
+
+h3 {
+  margin: 0 0 1em 0;
+}
+
+.l-row--project {
+  height:100vh;
+}
+.l-row .justified__item {
+  font-size: 16px;
+  line-height: 27px;
+}
+
+/* line 10, ../sass/layouts/_row.scss */
+.l-row--landing {
+ background: url("../img/bg.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100vh;
+}
+
+
+/* line 16, ../sass/layouts/_row.scss */
+.l-row--project {
+  padding-top: 11.25em;
+  padding-bottom: 11.25em;
+  margin: 0 0 0 0;
+}
+
+h4{
+	min-width: 300px;	
+    width: 50vw;
+    height: 50vh;
+    margin : auto;
+}
+/* line 20, ../sass/layouts/_row.scss */
+.l-row--project-details {
+  padding-top: 8.25em;
+  padding-bottom: 3.25em;
+}
+
+/* line 24, ../sass/layouts/_row.scss */
+.l-row--contact {
+  padding-top: 6.875em;
+  padding-bottom: 6.875em;
+}
+
+/* line 28, ../sass/layouts/_row.scss */
+.l-row--green {
+  background-color: #3cbaa6;
+}
+
+/* line 29, ../sass/layouts/_row.scss */
+.l-row--dark {
+  background-color: #224256;
+}
+
+/* line 30, ../sass/layouts/_row.scss */
+.l-row--red {
+  background-color: #de5020;
+}
+
+/* line 31, ../sass/layouts/_row.scss */
+.l-row--orange {
+  background-color: #e7a12e;
+}
+
+/* line 32, ../sass/layouts/_row.scss */
+.l-row--purple {
+  background-color: #504178;
+}
+
+/* line 33, ../sass/layouts/_row.scss */
+.l-row--light {
+  background-color: #e1e9ef;
+}
+
+.project__logo {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.75em;
+  line-height: 1.09091em;
+  font-weight: 700;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+  max-width: 75%
+  color: white;
+  text-transform: uppercase;
+}
+
+.project__logo.nudge { 
+margin-bottom: 0.7em;
+}
+
+.button, .button--inverse {
+  align-content:center;
+  display: inline-block;
+  padding: 8px 22px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background-color: #3d90c3;
+  border-color: #3d90c3;
+  border-width: 2px;
+  border-style: solid;
+  -webkit-transition-property: color, background-color;
+  -moz-transition-property: color, background-color;
+  -o-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 0.5s, 0.5s;
+  -moz-transition-duration: 0.5s, 0.5s;
+  -o-transition-duration: 0.5s, 0.5s;
+  transition-duration: 0.5s, 0.5s;
+  letter-spacing: 2px;
+  align-content:center;
+}
+
+.button:hover, .button--inverse:hover {
+  background-color: white;
+  color: #3d90c3;
+}
+
+/* line 28, ../sass/modules/_buttons.scss */
+.button--inverse {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+/* line 35, ../sass/modules/_buttons.scss */
+.button--inverse:hover {
+  background-color: white;
+  color: #3d90c3;
+}
