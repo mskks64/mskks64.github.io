@@ -12,9 +12,9 @@ body {
    width:100%;
 }
 
-#title-pane img {
+.fullLogo {
   width:50%;
-  max-width:900px;
+  max-width:600px;
   min-width:300px;
   margin-top:200px;
 }
