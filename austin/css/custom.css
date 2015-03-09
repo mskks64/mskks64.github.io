@@ -46,19 +46,19 @@ body {
 }
 
 .background-1 {
-  background-color: #7AE7C7;
+  background-color: #52DCFF;
 }
 
 .background-2 {
-  background-color: #3CA6BB;
+  background-color: #7AE7C7;
 }
 
 .background-3 {
-  background-color: #2A747B;
+  background-color: #3CA6BB;
 }
 
 .background-4 {
-  background-color: #52DCFF;
+  background-color: #2A747B;
 }
 
 .background-5 {
@@ -94,5 +94,4 @@ body {
 
 #project-button img {
   max-width: 100%
-
 }
