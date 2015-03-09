@@ -20,7 +20,7 @@ body {
 }
 
 #social-media img {
-width:100%;
+  max-width:100%;
 }
 
 #project1-pane {
@@ -90,4 +90,9 @@ width:100%;
   width:70px;
   height:70px;
   float:right;
+}
+
+#project-button img {
+  max-width: 100%
+
 }
