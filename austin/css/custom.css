@@ -13,8 +13,9 @@ body {
 }
 
 #title-pane img {
-  max-width:450px;
-  width:100%;
+  width:50%;
+  max-width:900px;
+  min-width:300px;
   margin-top:200px;
 }
 
@@ -28,7 +29,7 @@ body {
 #project1-pane img {
   width:100%;
   margin:0;
-  max-width:600px;
+  max-width:1200px;
   margin-left:20px;
   margin-right:20px;
 }
@@ -73,6 +74,7 @@ body {
 
 .navbar-top .left-icon {
   margin-left:15px;
+  margin-top:15px;
   width:70px;
   height:70px;
   float:left;
@@ -80,6 +82,7 @@ body {
 
 .navbar-top .right-icon {
   margin-right:15px;
+  margin-top:15px;
   width:70px;
   height:70px;
   float:right;
