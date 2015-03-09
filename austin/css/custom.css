@@ -88,13 +88,8 @@ body {
   float:right;
 }
 
-<<<<<<< HEAD
 .project-button {
 	max-width:600px;
 	margin-top:0px;
 	margin-bottom:0px;
-=======
-#project-button img {
-  max-width: 100%
->>>>>>> 52861fe52aeaa16937098346c4291dbbdc8c60f8
-}
+	}
