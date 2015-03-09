@@ -23,14 +23,14 @@ body {
   max-width:100%;
 }
 
-#project1-pane {
+.project-pane {
   padding-top:20px;
   padding-bottom:20px;
   width:100%;
   height:100vh;
 }
 
-#project1-pane img {
+.project-pane-image {
   width:100%;
   margin:0;
   max-width:1200px;
@@ -92,7 +92,8 @@ body {
   float:right;
 }
 
-#project-button img {
-  max-width: 100%
-
+.project-button {
+	max-width:600px;
+	margin-top:0px;
+	margin-bottom:0px;
 }
