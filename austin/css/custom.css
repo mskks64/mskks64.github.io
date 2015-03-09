@@ -2,6 +2,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+html {
+	overflow-x: hidden;
+}
+
 #title-pane {
   background: url("../img/bg.jpg") no-repeat center center fixed;
    -webkit-background-size: cover;
