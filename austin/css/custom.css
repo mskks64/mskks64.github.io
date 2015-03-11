@@ -80,16 +80,18 @@ html {
 .navbar-top .left-icon {
   margin-left:10px;
   margin-top:5px;
-  width:30px;
-  height:30px;
+  margin-bottom:5px;
+  width:40px;
+  height:40px;
   float:left;
 }
 
 .navbar-top .right-icon {
   margin-right:10px;
   margin-top:5px;
-  width:30px;
-  height:30px;
+  margin-bottom:5px;
+  width:40px;
+  height:40px;
   float:right;
 }
 
