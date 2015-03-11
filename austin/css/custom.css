@@ -94,7 +94,8 @@ html {
 }
 
 .project-button {
-	max-width: 80%;
+	max-width: 30%;
 	margin-top:0px;
 	margin-bottom:0px;
+  min-width: 100px;
 	}
