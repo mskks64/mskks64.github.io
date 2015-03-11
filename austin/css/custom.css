@@ -79,8 +79,8 @@ html {
 
 .navbar-top .left-icon {
   margin-left:10px;
-  margin-top:5px;
-  margin-bottom:5px;
+  margin-top:10px;
+  margin-bottom:10px;
   width:40px;
   height:40px;
   float:left;
@@ -88,8 +88,8 @@ html {
 
 .navbar-top .right-icon {
   margin-right:10px;
-  margin-top:5px;
-  margin-bottom:5px;
+  margin-top:10px;
+  margin-bottom:10px;
   width:40px;
   height:40px;
   float:right;
