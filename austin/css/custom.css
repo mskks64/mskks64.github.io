@@ -80,8 +80,8 @@ html {
   margin-left:10px;
   margin-top:10px;
   margin-bottom:10px;
-  width:40px;
-  height:40px;
+  width:60px;
+  height:60px;
   float:left;
 }
 
@@ -89,8 +89,8 @@ html {
   margin-right:10px;
   margin-top:10px;
   margin-bottom:10px;
-  width:40px;
-  height:40px;
+  width:60px;
+  height:60px;
   float:right;
 }
 
@@ -99,4 +99,5 @@ html {
 	margin-top:0px;
 	margin-bottom:0px;
   min-width: 200px;
+  max-width: 500px;
 	}
