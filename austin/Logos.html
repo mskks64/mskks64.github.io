@@ -1,0 +1,116 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Kennedy - Portfolio</title>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <link rel="stylesheet" href="css/custom.css" />
+	<link rel="stylesheet" href="./css/jquery.maximage.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="./css/screen.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+	<style type="text/css" media="screen">			
+			#maximage {
+/*				position:fixed !important;*/
+			}
+			
+			/*Set my logo in bottom left*/
+			#logo {
+				bottom:30px;
+				height:auto;
+				left:30px;
+				position:absolute;
+				width:34%;
+				z-index:1000;
+			}
+			#logo img {
+				width:100%;
+			}
+
+			#arrow_left, #arrow_right {
+				bottom:30px;
+				height:67px;
+				position:absolute;
+				right:30px;
+				width:36px;
+				z-index:1000;
+			}
+			#arrow_left {
+				right:86px;
+			}
+
+			#arrow_left:hover, #arrow_right:hover {
+				bottom:29px;
+			}
+			#arrow_left:active, #arrow_right:active {
+				bottom:28px;
+			}
+			
+		</style>
+  </head>
+  <body>
+  <!-- Navbar -->
+    <div class="navbar-top">
+      <div class="left-icon">
+        <a href="index.html"><img src="img/logo.png"/>
+      </div>
+      <div class="right-icon">
+        <img src="img/menu.png"/>
+      </div>
+    </div>
+   <!-- Gallery -->
+	<a href="http://blog.aaronvanderzwan.com/maximage-2-0/" id="logo"><img src="./img/Logos/logo.png" alt="MaxImage: Uses jQuery Cycle Plugin to create background slideshows" /></a>
+		<a href="" id="arrow_left"><img src="./img/arrow_left.png" alt="Slide Left" /></a>
+		<a href="" id="arrow_right"><img src="./img/arrow_right.png" alt="Slide Right" /></a>
+		
+		<div id="maximage">
+			<img src="./img/Logos/Logos.png" alt= "Logos" />
+			<img src="./img/Logos/Roosevelt.png" alt= "Roosevelt Honey Logo" />
+			<img src="./img/Logos/RooseveltBranding.png" alt= "Roosevelt Honey Branding" />
+			<img src="./img/Logos/RooseveltBillboard.png" alt= "Roosevelt Honey Billboard" />
+			<img src="./img/Logos/NorthBridgeFirearms.png" alt= "North Bridge Firearms Logo" />
+			<img src="./img/Logos/Display1.png" alt= "North Bridge Firearms Display 1" />
+			<img src="./img/Logos/Display2.png" alt= "North Bridge Firearms Display 2" />
+			<img src="./img/Logos/Display3.png" alt= "North Bridge Firearms Display 3" />
+			<img src="./img/Logos/Display4.png" alt= "North Bridge Firearms Display 4" />
+
+		</div>
+		
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
+		<script src="./js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+			$(function(){
+				// Trigger maximage
+				$('#maximage').maximage({
+					cycleOptions: {
+						fx: 'fade',
+						speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
+						timeout: 0,
+						prev: '#arrow_left',
+						next: '#arrow_right',
+						pause: 1,
+						after: function(last,current){
+							// console.log($(current).find('.light-text').html());
+						}
+					}
+				});
+			});
+		</script>
+		
+		<!-- DON'T USE THIS: Insert Google Analytics code here -->
+		<script type="text/javascript">
+			
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-733524-1']);
+		  _gaq.push(['_trackPageview']);
+			
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+  </body>
+</html>
