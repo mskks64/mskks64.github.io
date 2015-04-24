@@ -4,178 +4,106 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michael Kennedy - Portfolio</title>
-    <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-	
-	<!-- Slider -->
-	<link rel="stylesheet" type="text/css" href="./vendors/fullscreenSlitSlider/css/demo.css" />
-    <link rel="stylesheet" type="text/css" href="./vendors/fullscreenSlitSlider/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./vendors/fullscreenSlitSlider/css/custom.css" />
-	
-    <script src="js/vendor/modernizr.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+		
+	<link rel="stylesheet" href="./css/jquery.maximage.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+	<link rel="stylesheet" href="./css/screen.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+	<style type="text/css" media="screen">			
+			#maximage {
+/*				position:fixed !important;*/
+			}
+			
+			/*Set my logo in bottom left*/
+			#logo {
+				bottom:30px;
+				height:auto;
+				left:30px;
+				position:absolute;
+				width:34%;
+				z-index:1000;
+			}
+			#logo img {
+				width:100%;
+			}
+
+			#arrow_left, #arrow_right {
+				bottom:30px;
+				height:67px;
+				position:absolute;
+				right:30px;
+				width:36px;
+				z-index:1000;
+			}
+			#arrow_left {
+				right:86px;
+			}
+
+			#arrow_left:hover, #arrow_right:hover {
+				bottom:29px;
+			}
+			#arrow_left:active, #arrow_right:active {
+				bottom:28px;
+			}
+			
+		</style>
   </head>
   <body>
-	
-	<div class="container demo-1">
-    	<!-- Navbar -->
-    	<div class="navbar-top">
-     	 	<div class="left-icon">
-      	  		<img src="img/logo.png"/>
-     	 	</div>
-     		<div class="right-icon">
-      			<img src="img/menu.png"/>
-     		</div>
-    	</div>
-            <div id="slider" class="sl-slider-wrapper">
-
-				<div class="sl-slider">
-				
-					<div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
-						<div class="sl-slide-inner">
-							<div class="deco" data-icon="H"></div>
-							<h2>A bene placito</h2>
-							<blockquote><p>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p><cite>Ralph Waldo Emerson</cite></blockquote>
-						</div>
-					</div>
-					
-					<div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
-						<div class="sl-slide-inner">
-							<div class="deco" data-icon="q"></div>
-							<h2>Regula aurea</h2>
-							<blockquote><p>Until he extends the circle of his compassion to all living things, man will not himself find peace.</p><cite>Albert Schweitzer</cite></blockquote>
-						</div>
-					</div>
-					
-					<div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="deco" data-icon="O"></div>
-							<h2>Dum spiro, spero</h2>
-							<blockquote><p>Thousands of people who say they 'love' animals sit down once or twice a day to enjoy the flesh of creatures who have been utterly deprived of everything that could make their lives worth living and who endured the awful suffering and the terror of the abattoirs.</p><cite>Dame Jane Morris Goodall</cite></blockquote>
-						</div>
-					</div>
-					
-					<div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="deco" data-icon="I"></div>
-							<h2>Donna nobis pacem</h2>
-							<blockquote><p>The human body has no more need for cows' milk than it does for dogs' milk, horses' milk, or giraffes' milk.</p><cite>Michael Klaper M.D.</cite></blockquote>
-						</div>
-					</div>
-					
-					<div class="sl-slide bg-5" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
-						<div class="sl-slide-inner">
-							<div class="deco" data-icon="t"></div>
-							<h2>Acta Non Verba</h2>
-							<blockquote><p>I think if you want to eat more meat you should kill it yourself and eat it raw so that you are not blinded by the hypocrisy of having it processed for you.</p><cite>Margi Clarke</cite></blockquote>
-						</div>
-					</div>
-				</div><!-- /sl-slider -->
-				
-				<nav id="nav-arrows" class="nav-arrows">
-					<span class="nav-arrow-prev">Previous</span>
-					<span class="nav-arrow-next">Next</span>
-				</nav>
-
-				<nav id="nav-dots" class="nav-dots">
-					<span class="nav-dot-current"></span>
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</nav>
-
-			</div><!-- /slider-wrapper -->
-
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-	<script type="text/javascript" src="./vendors/fullscreenSlitSlider/js/jquery.ba-cond.min.js"></script>
-	<script type="text/javascript" src="./vendors/fullscreenSlitSlider/js/jquery.slitslider.js"></script>
-	<script type="text/javascript">	
-			$(function() {
-			
-				var Page = (function() {
-
-					var $navArrows = $( '#nav-arrows' ),
-						$nav = $( '#nav-dots > span' ),
-						slitslider = $( '#slider' ).slitslider( {
-							onBeforeChange : function( slide, pos ) {
-
-								$nav.removeClass( 'nav-dot-current' );
-								$nav.eq( pos ).addClass( 'nav-dot-current' );
-
-							}
-						} ),
-
-						init = function() {
-
-							initEvents();
-							
-						},
-						initEvents = function() {
-
-							// add navigation events
-							$navArrows.children( ':last' ).on( 'click', function() {
-
-								slitslider.next();
-								return false;
-
-							} );
-
-							$navArrows.children( ':first' ).on( 'click', function() {
-								
-								slitslider.previous();
-								return false;
-
-							} );
-
-							$nav.each( function( i ) {
-							
-								$( this ).on( 'click', function( event ) {
-									
-									var $dot = $( this );
-									
-									if( !slitslider.isActive() ) {
-
-										$nav.removeClass( 'nav-dot-current' );
-										$dot.addClass( 'nav-dot-current' );
-									
-									}
-									
-									slitslider.jump( i + 1 );
-									return false;
-								
-								} );
-								
-							} );
-
-						};
-
-						return { init : init };
-
-				})();
-
-				Page.init();
-
-				/**
-				 * Notes: 
-				 * 
-				 * example how to add items:
-				 */
-
-				/*
-				
-				var $items  = $('<div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1"><div class="sl-slide-inner bg-1"><div class="sl-deco" data-icon="t"></div><h2>some text</h2><blockquote><p>bla bla</p><cite>Margi Clarke</cite></blockquote></div></div>');
-				
-				// call the plugin's add method
-				ss.add($items);
-
-				*/
-			
+	<a href="http://blog.aaronvanderzwan.com/maximage-2-0/" id="logo"><img src="./img/demo/logo.png" alt="MaxImage: Uses jQuery Cycle Plugin to create background slideshows" /></a>
+		<a href="" id="arrow_left"><img src="./img/demo/arrow_left.png" alt="Slide Left" /></a>
+		<a href="" id="arrow_right"><img src="./img/demo/arrow_right.png" alt="Slide Right" /></a>
+		
+		<div id="maximage">
+			<img src="./img/demo/wall_portrait.jpg" alt="" width="1400" height="1050" />
+			<img src="./img/demo/coalesse.jpg" alt="Coalesse" width="1400" height="1050" />
+			<img src="./img/demo/laughing.jpg" alt="" width="1400" height="1050" />
+			<img src="./img/demo/roof_shooting.jpg" alt="" width="2048" height="1536" />
+			<img src="./img/demo/man.jpg" alt="" width="2048" height="1536" />
+			<img src="./img/demo/coffee_shop.jpg" alt="" width="2048" height="1536" />
+			<img src="./img/demo/gas_station.jpg" width="2048" height="1536" alt="Gas Station">
+			<img src="./img/demo/golf_sunset.jpg" width="2048" height="1536" alt="Golf Sunset">
+			<img src="./img/demo/oldladyb.jpg" width="1166" height="1400" alt="Oldladyb">
+			<img src="./img/demo/oldmanb.jpg" width="1422" height="1800" alt="Oldmanb">
+			<img src="./img/demo/oldmantatoo.jpg" width="800" height="1200" alt="Oldmantatoo">
+			<img src="./img/demo/pattern.jpg" width="2048" height="1536" alt="Pattern">
+			<img src="./img/demo/tajik_man.jpg" width="1300" height="871" alt="Tajik Man">
+		</div>
+		
+		<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
+		<script src="./js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript" charset="utf-8">
+			$(function(){
+				// Trigger maximage
+				$('#maximage').maximage({
+					cycleOptions: {
+						fx: 'fade',
+						speed: 1000, // Has to match the speed for CSS transitions in jQuery.maximage.css (lines 30 - 33)
+						timeout: 0,
+						prev: '#arrow_left',
+						next: '#arrow_right',
+						pause: 1,
+						after: function(last,current){
+							// console.log($(current).find('.light-text').html());
+						}
+					}
+				});
 			});
 		</script>
-    <script>
-      $(document).foundation();
-    </script>
+		
+		<!-- DON'T USE THIS: Insert Google Analytics code here -->
+		<script type="text/javascript">
+			
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-733524-1']);
+		  _gaq.push(['_trackPageview']);
+			
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
   </body>
 </html>
